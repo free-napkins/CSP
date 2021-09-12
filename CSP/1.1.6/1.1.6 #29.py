@@ -29,10 +29,21 @@ while (legloop1 < 4):
   legloop1 = legloop1 + 1
 while (legloop2 < 4):
   painter.goto(0,0)
-  painter.setheading(spacing*left_legs-45)
+  painter.setheading(spacing*left_legs-65)
   painter.forward(leg_length)
   left_legs = left_legs - 1
   legloop2 = legloop2 + 1
+
+painter.shapesize(0.5)
+painter.penup()
+painter.goto(-25,15)
+painter.pendown()
+painter.shape("circle")
+painter.color("red")
+painter.stamp()
+painter.penup()
+painter.goto(-28,-2)
+painter.stamp()
 
 painter.hideturtle()
 wn = trtl.Screen()
